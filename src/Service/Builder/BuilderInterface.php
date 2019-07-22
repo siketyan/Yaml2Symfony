@@ -8,5 +8,10 @@ use Nette\PhpGenerator\ClassType;
 
 interface BuilderInterface
 {
+    /**
+     * Builds the component.
+     *
+     * @return ClassType built class
+     */
     public function build(): ClassType;
 }
