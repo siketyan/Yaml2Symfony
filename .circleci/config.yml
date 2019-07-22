@@ -45,6 +45,6 @@ jobs:
                       - ./vendor
 
             # Run tests with phpunit
-            # - run:
-            #       name: Run PHPUnit
-            #       command: ./bin/phpunit
+            - run:
+                  name: Run PHPUnit
+                  command: ./bin/phpunit
