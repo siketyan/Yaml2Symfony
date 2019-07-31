@@ -4,14 +4,14 @@ declare(strict_types=1);
 
 namespace App\Service\Builder;
 
-use Nette\PhpGenerator\ClassType;
+use Nette\PhpGenerator\PhpNamespace;
 
 interface BuilderInterface
 {
     /**
      * Builds the component.
      *
-     * @return ClassType built class
+     * @return PhpNamespace the namespace with the built class
      */
-    public function build(): ClassType;
+    public function build(): PhpNamespace;
 }
