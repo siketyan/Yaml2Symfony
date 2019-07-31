@@ -6,6 +6,12 @@ namespace App\Entity;
 
 class Field
 {
+    public const TYPE_STRING = 'string';
+    public const TYPE_INT = 'int';
+    public const TYPE_FLOAT = 'float';
+    public const TYPE_BOOL = 'bool';
+    public const TYPE_ARRAY = 'array';
+
     /**
      * @var string the type of the field
      */

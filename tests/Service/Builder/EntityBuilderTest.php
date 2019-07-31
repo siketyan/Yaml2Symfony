@@ -28,10 +28,10 @@ class EntityBuilderTest extends TestCase
     {
         $this->builder = (new EntityBuilder(self::CLASS_NAME))
             ->addField(
-                (new Field('string', self::STRING_FIELD))
+                (new Field(Field::TYPE_STRING, self::STRING_FIELD))
             )
             ->addField(
-                (new Field('int', self::INT_FIELD))
+                (new Field(Field::TYPE_INT, self::INT_FIELD))
             )
         ;
     }
