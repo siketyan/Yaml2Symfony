@@ -18,9 +18,11 @@ class FormField extends Field
      * @param string $name    the name of the form field
      * @param array  $options the options of the form field
      */
-    public function __construct(string $type, string $name, array $options)
+    public function __construct(string $type, string $name, array $options = [])
     {
         parent::__construct($type, $name);
+
+        $this->options = $options;
     }
 
     /**
